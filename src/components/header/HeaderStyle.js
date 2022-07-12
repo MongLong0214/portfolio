@@ -3,7 +3,6 @@ import headerImg from "../../img/headerIMG.jpg";
 
 export const MainContainer = styled.section`
   width: 100%;
-  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,9 +10,10 @@ export const MainContainer = styled.section`
   background-image: url(${headerImg});
   background-repeat: no-repeat;
   background-size: cover;
+
+  position: fixed;
 `;
 export const LogoContainer = styled.div`
-  width: 20vw;
   height: 10vh;
   display: flex;
 `;
@@ -25,7 +25,7 @@ export const LogoImgContainer = styled.img`
 `;
 
 export const LogoCopyContainer = styled.div`
-  font-size: 2.2rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,8 +34,6 @@ export const LogoCopyContainer = styled.div`
 `;
 
 export const NavContainer = styled.ul`
-  /* width: 50%; */
-  height: 10vh;
   list-style: none;
   font-size: 2rem;
   display: flex;

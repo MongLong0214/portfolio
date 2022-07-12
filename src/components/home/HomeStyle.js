@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const FirstPage = styled.section`
   width: 100%;
-  height: 85vh;
+  /* height: 89vh; */
 
   display: flex;
   justify-content: center;
@@ -17,19 +17,18 @@ export const FirstPageProfileImg = styled.img`
   height: 18rem;
   border-radius: 50%;
   background-color: #e3c53d;
+  margin-top: 16rem;
 `;
 
 export const FirstPageProfileCopy = styled.div`
-  width: 28vw;
-  height: 20vh;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   /* background-color: black; */
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #7579da;
 `;
@@ -45,6 +44,7 @@ export const ContactButton = styled.button`
   font-size: 1.5rem;
   font-weight: bold;
   color: #7579da;
+  margin-bottom: 6rem;
 
   &:hover {
     background: #d3d65a;
@@ -201,10 +201,6 @@ export const ThirdPage = styled.section`
 export const ThirdPageHeadCopy = styled(SecondPageHeadCopy)`
   /* height: 20vh; */
   margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   /* background-color: blue; */
   font-size: 5rem;
   font-weight: bold;
@@ -214,10 +210,6 @@ export const ThirdPageSubCopy = styled(SecondPageSubCopy)`
   margin-bottom: 1rem;
   margin-top: 1rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-weight: bold;
   /* background-color: red; */
   font-size: 1.7rem;
@@ -231,7 +223,7 @@ export const ThirdPageSkillBoxContainer = styled.div`
 `;
 
 export const ThirdPageSkillBox = styled.div`
-  width: 60%;
+  width: 39vw;
   /* height: 65vh; */
   background: #e3c53d;
   border: 3px solid #c3db64;
@@ -245,6 +237,7 @@ export const ThirdPageSkillItem = styled.div`
 
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   /* background: black; */
 `;
 
@@ -277,11 +270,9 @@ export const ThirdPageSkillBox2 = styled.div`
 `;
 
 export const ThirdPageSkillCircle = styled.div`
-  width: 10rem;
-  height: 10rem;
-
+  width: 8rem;
+  height: 8rem;
   border: 4px solid #f1e29e;
-
   border-radius: 10rem;
   display: flex;
   justify-content: center;
@@ -291,5 +282,169 @@ export const ThirdPageSkillCircle = styled.div`
 
 export const StyledFontAwesomeIcon2 = styled(FontAwesomeIcon)`
   color: #7579da;
-  font-size: 6rem;
+  font-size: 5rem;
+`;
+
+export const ThirdPageSkillHeadCopy = styled(SecondPageHeadCopy)`
+  /* height: 20vh; */
+  margin-top: 3rem;
+  /* background-color: blue; */
+  font-size: 5rem;
+  font-weight: bold;
+  color: #7579da;
+`;
+
+export const ThirdPageSkillSubCopy = styled(SecondPageSubCopy)`
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  font-weight: bold;
+  /* background-color: red; */
+  font-size: 1.7rem;
+  color: #7579da;
+`;
+
+export const FourthPage = styled(FirstPage)`
+  height: auto;
+  background-color: #19c4eb;
+`;
+
+export const FourthPageHeadCopy = styled(SecondPageHeadCopy)`
+  /* height: 20vh; */
+  margin-top: 2rem;
+  /* background-color: blue; */
+  font-size: 5rem;
+  font-weight: bold;
+  color: #c3db64;
+`;
+export const FourthPageSubCopy = styled(SecondPageSubCopy)`
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+  font-weight: bold;
+  /* background-color: red; */
+  font-size: 1.7rem;
+  color: #c3db64;
+`;
+
+export const FourthPageBox = styled.div`
+  margin: 3rem;
+  width: 78vw;
+
+  box-sizing: border-box;
+  border: 3px solid #c3db64;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 14rem;
+`;
+
+export const FourthPageItem = styled.div`
+  width: 25%;
+
+  border-right: 1px solid #c3db64;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const FourthPageItem2 = styled.div`
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: blue; */
+`;
+
+export const FourthPageItemCopyBox = styled.div`
+  /* background-color: blue; */
+`;
+
+export const FourthPageItemCopy = styled(SecondPageHeadCopy)`
+  /* height: 20vh; */
+  margin-top: 2rem;
+  /* background-color: blue; */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c3db64;
+`;
+
+export const FourthPageItemSubCopy = styled(SecondPageSubCopy)`
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #c3db64;
+`;
+
+export const FourthPageItemImg = styled.img`
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+`;
+
+export const FourthPageItemImgCopy = styled(SecondPageSubCopy)`
+  font-weight: bold;
+  /* background-color: red; */
+  font-size: 1.7rem;
+  color: #c3db64;
+`;
+
+export const FifthPage = styled(FirstPage)`
+  height: auto;
+`;
+
+export const FifthPageHeadCopy = styled(SecondPageHeadCopy)`
+  margin-top: 2.5rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #7579da;
+`;
+export const FifthPageSubCopy = styled(SecondPageSubCopy)`
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #7579da;
+`;
+
+export const FifthPageBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const FifthPageItemBox = styled.div`
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+`;
+
+export const FifthPageItemImg = styled.img`
+  width: 14rem;
+`;
+
+export const FifthPageItemCopy = styled.div`
+  padding: 2rem;
+  background: #ffe9e9;
+  border-radius: 3rem;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  flex-direction: column;
+`;
+export const FifthPageItemSubCopy = styled.div`
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: flex-end;
 `;

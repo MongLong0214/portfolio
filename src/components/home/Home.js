@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../header/Header";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "../footer/Footer";
+
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +12,6 @@ import {
   FirstPageProfileCopy,
   ContactButton,
   SecondPage,
-  //   SecondPageCopyBox,
   SecondPageHeadCopy,
   SecondPageSubCopy,
   SecondPageSubCopy2,
@@ -34,14 +34,38 @@ import {
   ThirdPageSkillSubTextBox,
   ThirdPageSkillBox2,
   StyledFontAwesomeIcon2,
+  ThirdPageSkillHeadCopy,
+  ThirdPageSkillSubCopy,
+  FourthPage,
+  FourthPageHeadCopy,
+  FourthPageSubCopy,
+  FourthPageBox,
+  FourthPageItem,
+  FourthPageItem2,
+  FourthPageItemCopyBox,
+  FourthPageItemCopy,
+  FourthPageItemSubCopy,
+  FourthPageItemImg,
+  FourthPageItemImgCopy,
+  FifthPage,
+  FifthPageHeadCopy,
+  FifthPageSubCopy,
+  FifthPageBox,
+  FifthPageItemBox,
+  FifthPageItemImg,
+  FifthPageItemCopy,
+  FifthPageItemSubCopy,
 } from "./HomeStyle";
 import ProfileImg from "../../img/ProfileImg.jpg";
-import HTML from "../../img/HTML.png";
-import JS from "../../img/JS.png";
-import REACT from "../../img/REACT.png";
+import SeoulMate from "../../img/SeoulMate.png";
+import youTube from "../../img/youTube.png";
+import CatchCalorie from "../../img/CatchCalorie.png";
+import git from "../../img/git.png";
 
-import imoge1 from "../../img/imoge1.png";
-import imoge2 from "../../img/imoge2.png";
+import imoge1 from "../../img/imoge2.png";
+import imoge2 from "../../img/imoge1.png";
+import imoge3 from "../../img/imoge3.png";
+import imoge4 from "../../img/imoge4.png";
 
 const Home = () => {
   return (
@@ -139,15 +163,124 @@ const Home = () => {
               <ThirdPageSkillCircle>
                 <StyledFontAwesomeIcon2 icon={faReact} />
               </ThirdPageSkillCircle>
-              <ThirdPageSkillTextBox style={{ marginLeft: "4rem" }}>
+              <ThirdPageSkillTextBox style={{ marginLeft: "3rem" }}>
                 React
                 <ThirdPageSkillSubTextBox>( recoil )</ThirdPageSkillSubTextBox>
               </ThirdPageSkillTextBox>
             </ThirdPageSkillItem>
           </ThirdPageSkillBox>
-          <ThirdPageSkillBox2></ThirdPageSkillBox2>
+          <ThirdPageSkillBox2>
+            <ThirdPageSkillHeadCopy>Tools</ThirdPageSkillHeadCopy>
+            <ThirdPageSkillSubCopy>Visual Studio Code</ThirdPageSkillSubCopy>
+            <ThirdPageSkillSubCopy>Figma</ThirdPageSkillSubCopy>
+            <ThirdPageSkillSubCopy>Adobe XD</ThirdPageSkillSubCopy>
+            <ThirdPageSkillHeadCopy>Etc.</ThirdPageSkillHeadCopy>
+            <ThirdPageSkillSubCopy>Git</ThirdPageSkillSubCopy>
+            <ThirdPageSkillSubCopy>Node.js</ThirdPageSkillSubCopy>
+            <ThirdPageSkillSubCopy>Python</ThirdPageSkillSubCopy>
+          </ThirdPageSkillBox2>
         </ThirdPageSkillBoxContainer>
       </ThirdPage>
+      <FourthPage>
+        <FourthPageHeadCopy>Projects</FourthPageHeadCopy>
+        <FourthPageSubCopy>지금까지 작업한 결과물 입니다</FourthPageSubCopy>
+        <FourthPageBox>
+          <FourthPageItem>
+            <FourthPageItemCopyBox>
+              <FourthPageItemCopy>
+                랜드마크 정보 <br />
+                예측 서비스
+              </FourthPageItemCopy>
+              <FourthPageItemSubCopy>2022.06</FourthPageItemSubCopy>
+            </FourthPageItemCopyBox>
+            <FourthPageItemImg src={SeoulMate} />
+            <FourthPageItemImgCopy>SeoulMate</FourthPageItemImgCopy>
+          </FourthPageItem>
+          <FourthPageItem>
+            <FourthPageItemCopyBox>
+              <FourthPageItemCopy>
+                동영상 업로드 및<br /> 공유 서비스
+              </FourthPageItemCopy>
+              <FourthPageItemSubCopy>2022.05</FourthPageItemSubCopy>
+            </FourthPageItemCopyBox>
+            <FourthPageItemImg
+              src={youTube}
+              style={{ width: "40%", marginTop: "2rem" }}
+            />
+          </FourthPageItem>
+          <FourthPageItem>
+            <FourthPageItemCopyBox>
+              <FourthPageItemCopy>
+                칼로리 및 운동량 <br />
+                모니터링 서비스
+              </FourthPageItemCopy>
+              <FourthPageItemSubCopy>2022.04</FourthPageItemSubCopy>
+            </FourthPageItemCopyBox>
+            <FourthPageItemImg
+              src={CatchCalorie}
+              style={{ width: "40%", marginTop: "1rem", marginBottom: "1rem" }}
+            />
+            <FourthPageItemImgCopy>CatchCalorie</FourthPageItemImgCopy>
+          </FourthPageItem>
+          <FourthPageItem2>
+            <FourthPageItemCopyBox>
+              <FourthPageItemCopy>
+                포트폴리오 <br />
+                게시판 CRUD
+              </FourthPageItemCopy>
+              <FourthPageItemSubCopy>2022.03</FourthPageItemSubCopy>
+            </FourthPageItemCopyBox>
+            <FourthPageItemImg
+              src={git}
+              style={{
+                width: "33%",
+                marginTop: "1.5rem",
+              }}
+            />
+          </FourthPageItem2>
+        </FourthPageBox>
+      </FourthPage>
+      <FifthPage>
+        <FifthPageHeadCopy>Testimonials</FifthPageHeadCopy>
+        <FifthPageSubCopy>
+          저를 본 사람들은 저를 이렇게 평가합니다
+        </FifthPageSubCopy>
+        <FifthPageBox>
+          <FifthPageItemBox>
+            <FifthPageItemImg src={imoge1} />
+            <FifthPageItemCopy>
+              같이 일하면 즐거운 사람입니다. 항상 적극적이며, 개선점을 찾아
+              수정하는 것을 즐깁니다.
+              <FifthPageItemSubCopy>
+                Jisu / elice ai 트랙 4기
+              </FifthPageItemSubCopy>
+            </FifthPageItemCopy>
+          </FifthPageItemBox>
+          <FifthPageItemBox>
+            <FifthPageItemImg src={imoge2} />
+            <FifthPageItemCopy>
+              함께 브레인스토밍 하는 과정을 즐기고, 추진력이 있습니다. 협업을 할
+              줄 아는사람 입니다.
+              <FifthPageItemSubCopy>
+                {" "}
+                Danial Kim / elice ai 트랙 4기
+              </FifthPageItemSubCopy>
+            </FifthPageItemCopy>
+          </FifthPageItemBox>
+          <FifthPageItemBox>
+            <FifthPageItemImg src={imoge4} />
+            <FifthPageItemCopy>
+              UI / UX에 관심이 많아요. 쉽게 지나칠 수 있는 디테일 한 부분들을
+              놓치지 않는 사람입니다.
+              <FifthPageItemSubCopy>
+                {" "}
+                Anna Jung/ elice ai 트랙 4기
+              </FifthPageItemSubCopy>
+            </FifthPageItemCopy>
+          </FifthPageItemBox>
+        </FifthPageBox>
+      </FifthPage>
+      <Footer />
     </>
   );
 };

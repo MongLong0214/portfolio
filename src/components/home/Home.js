@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import ScrollUpBtn from "../ScrollUpBtn";
 
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
@@ -77,7 +78,14 @@ const Home = () => {
           Hello,
           <br /> I'm an active Front-end Developer
         </FirstPageProfileCopy>
-        <ContactButton>Contact Me</ContactButton>
+        <ScrollUpBtn />
+        <ContactButton
+          onClick={() => {
+            window.scrollTo({ top: 6000, behavior: "smooth" });
+          }}
+        >
+          Contact Me
+        </ContactButton>
       </FirstPage>
       <SecondPage>
         <SecondPageHeadCopy>About Me</SecondPageHeadCopy>
@@ -94,7 +102,7 @@ const Home = () => {
               <StyledFontAwesomeIcon icon={faHtml5} />
             </SecondPageCircle>
             <SecondPageCopyBox>
-              HTML/CSS를 Front-End 개발에 <br />
+              HTML/CSS를 Front-end 개발에 <br />
               적합하게 작성합니다.
             </SecondPageCopyBox>
           </SecondPageEachCircleBox>
@@ -120,15 +128,15 @@ const Home = () => {
         <SecondPageCareer>
           <SecondPageCareerText>
             비디오샵 (광고제작프로덕션) - 광고 제작 PD{" "}
-            <span style={{ "font-size": "0.5rem" }}>(2020.01~2021.08) </span>
+            <span style={{ fontSize: "0.5rem" }}>(2020.01~2021.08) </span>
           </SecondPageCareerText>
           <SecondPageCareerText>
             Social MC (광고 대행사) - 영상 광고 기획 및 PM{" "}
-            <span style={{ "font-size": "0.5rem" }}>(2018.06~2019.10) </span>
+            <span style={{ fontSize: "0.5rem" }}>(2018.06~2019.10) </span>
           </SecondPageCareerText>
           <SecondPageCareerText>
             준콤 (광고대행사) - 광고 영업 및 AE{" "}
-            <span style={{ "font-size": "0.5rem" }}>(2017.01~2018.03) </span>
+            <span style={{ fontSize: "0.5rem" }}>(2017.01~2018.03) </span>
           </SecondPageCareerText>
         </SecondPageCareer>
       </SecondPage>
@@ -193,7 +201,12 @@ const Home = () => {
               </FourthPageItemCopy>
               <FourthPageItemSubCopy>2022.06</FourthPageItemSubCopy>
             </FourthPageItemCopyBox>
-            <FourthPageItemImg src={SeoulMate} />
+            <FourthPageItemImg
+              src={SeoulMate}
+              onClick={() => {
+                window.open("https://github.com/MongLong0214/SeoulMate");
+              }}
+            />
             <FourthPageItemImgCopy>SeoulMate</FourthPageItemImgCopy>
           </FourthPageItem>
           <FourthPageItem>
@@ -206,6 +219,9 @@ const Home = () => {
             <FourthPageItemImg
               src={youTube}
               style={{ width: "40%", marginTop: "2rem" }}
+              onClick={() => {
+                window.open("https://github.com/MongLong0214/YouTubeClone");
+              }}
             />
           </FourthPageItem>
           <FourthPageItem>
@@ -219,6 +235,9 @@ const Home = () => {
             <FourthPageItemImg
               src={CatchCalorie}
               style={{ width: "40%", marginTop: "1rem", marginBottom: "1rem" }}
+              onClick={() => {
+                window.open("https://github.com/MujiDev/catch-calorie");
+              }}
             />
             <FourthPageItemImgCopy>CatchCalorie</FourthPageItemImgCopy>
           </FourthPageItem>
@@ -235,6 +254,9 @@ const Home = () => {
               style={{
                 width: "33%",
                 marginTop: "1.5rem",
+              }}
+              onClick={() => {
+                window.open("https://github.com/MongLong0214/BoardCRUD");
               }}
             />
           </FourthPageItem2>

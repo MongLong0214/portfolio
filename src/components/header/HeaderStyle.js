@@ -2,7 +2,7 @@ import styled from "styled-components";
 import headerImg from "../../img/headerIMG.jpg";
 
 export const MainContainer = styled.section`
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,16 +12,24 @@ export const MainContainer = styled.section`
   background-size: cover;
 
   position: fixed;
+  z-index: 100;
+  font-family: "Poppins", sans-serif;
 `;
 export const LogoContainer = styled.div`
   height: 10vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const LogoImgContainer = styled.img`
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   padding: 1rem;
+  @media screen and (max-width: 960px) {
+    width: 3rem;
+    height: 3rem;
+  }
 `;
 
 export const LogoCopyContainer = styled.div`
@@ -31,6 +39,15 @@ export const LogoCopyContainer = styled.div`
   align-items: center;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: 960px) {
+    font-size: 1rem;
+  }
 `;
 
 export const NavContainer = styled.ul`
@@ -42,6 +59,32 @@ export const NavContainer = styled.ul`
   color: white;
   /* background-color: gray; */
   padding-right: 1.5rem;
+
+  @media screen and (max-width: 960px) {
+    overflow: hidden;
+    flex-direction: column;
+    max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
+    /* transition: max-height 0.3s ease-in; */
+    width: 100%;
+  }
+`;
+export const HamburgerMenu = styled.ul`
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 3rem;
+
+  span {
+    height: 2px;
+    width: 25px;
+    background: white;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  @media (max-width: 960px) {
+    display: flex;
+  }
 `;
 
 export const NavItem = styled.li`

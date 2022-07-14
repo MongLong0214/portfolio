@@ -13,11 +13,11 @@ const ScrollUpBtn = () => {
 
   const handleScroll = () => {
     if (ScrollY > 100) {
-      console.log("ScrollY: ", ScrollY);
+      // console.log("ScrollY: ", ScrollY);
       setScrollY(window.pageYOffset);
       setBtnState(true);
     } else {
-      console.log("ScrollY: ", ScrollY);
+      // console.log("ScrollY: ", ScrollY);
       setScrollY(window.pageYOffset);
       setBtnState(false);
     }

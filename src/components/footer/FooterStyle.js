@@ -21,6 +21,9 @@ export const FooterContactText = styled.div`
   font-size: 4rem;
   font-weight: bold;
   color: white;
+  @media screen and (max-width: 1150px) {
+    font-size: 3rem;
+  }
 `;
 
 export const FooterEMail = styled.div`
@@ -33,12 +36,20 @@ export const FooterEMail = styled.div`
     opacity: 0.8;
     transform: scale(1.1);
   }
+  @media screen and (max-width: 1150px) {
+    font-size: 1rem;
+  }
 `;
 
 export const FooterGitBox = styled.a`
   margin-top: 2rem;
   width: 4.5rem;
   height: 4.5rem;
+  @media screen and (max-width: 1150px) {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
 `;
 export const FooterGit = styled.img`
   width: 4.2rem;
@@ -48,6 +59,10 @@ export const FooterGit = styled.img`
     opacity: 0.8;
     transform: scale(1.1);
   }
+  @media screen and (max-width: 1150px) {
+    width: 3rem;
+    height: 3rem;
+  }
 `;
 
 export const FooterSubCopy = styled.div`
@@ -56,4 +71,8 @@ export const FooterSubCopy = styled.div`
   /* font-weight: bold; */
   color: white;
   margin-bottom: 1rem;
+  @media screen and (max-width: 1150px) {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
 `;

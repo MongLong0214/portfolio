@@ -21,10 +21,11 @@ export const FirstPageProfileImg = styled.img`
   background-color: #e3c53d;
   margin-top: 16rem;
 
-  @media screen and (max-width: 960px) {
-    margin-top: 7.8rem;
+  @media screen and (max-width: 1150px) {
+    margin-top: 6rem;
     width: 13rem;
     height: 13rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -39,9 +40,10 @@ export const FirstPageProfileCopy = styled.div`
   font-size: 4rem;
   font-weight: bold;
   color: #7579da;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -64,11 +66,12 @@ export const ContactButton = styled.button`
     border: 2px solid white;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     width: 8rem;
     height: 2.3rem;
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -88,7 +91,7 @@ export const SecondPageHeadCopy = styled.div`
   font-size: 5rem;
   font-weight: bold;
   color: #dcdf50;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 3rem;
   }
@@ -108,7 +111,7 @@ export const SecondPageSubCopy = styled.div`
 
   font-family: "Noto Sans KR", sans-serif;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 1rem;
   }
@@ -128,7 +131,7 @@ export const SecondPageSubCopy2 = styled.div`
 
   font-family: "Noto Sans KR", sans-serif;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 1rem;
   }
@@ -146,7 +149,7 @@ export const SecondPageSubCopy3 = styled.div`
 
   font-family: "Noto Sans KR", sans-serif;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 1.5rem;
   }
@@ -161,7 +164,7 @@ export const SecondPageCircleBox = styled.div`
 
   font-family: "Noto Sans KR", sans-serif;
   /* background-color: gray; */
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     flex-direction: column;
   }
@@ -171,7 +174,7 @@ export const SecondPageEachCircleBox = styled.div`
   flex-direction: column;
   align-items: center;
   /* background-color: gray; */
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     margin-bottom: 2rem;
   }
 `;
@@ -195,7 +198,7 @@ export const SecondPageCopyBox = styled.div`
   display: flex;
 
   align-items: center;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 1rem;
   }
@@ -207,7 +210,7 @@ export const SecondPageCopyBox = styled.div`
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   color: #dcdf50;
   font-size: 10rem;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 7rem;
   }
@@ -231,7 +234,7 @@ export const SecondPageCircle = styled.div`
       transform: rotate(-15deg);
     }
   }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     width: 15rem;
     height: 15rem;
   }
@@ -254,7 +257,7 @@ export const SecondPageCareerText = styled.div`
   color: #8ce2f5;
   font-family: "Noto Sans KR", sans-serif;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1150px) {
     overflow: hidden;
     font-size: 0.5rem;
     color: white;
@@ -280,18 +283,31 @@ export const ThirdPageHeadCopy = styled(SecondPageHeadCopy)`
   font-size: 5rem;
   font-weight: bold;
   color: #7579da;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 3rem;
+  }
 `;
 export const ThirdPageSubCopy = styled(SecondPageSubCopy)`
   font-weight: bold;
 
   font-size: 1.7em;
   color: #7579da;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 1rem;
+  }
 `;
 
 export const ThirdPageSkillBoxContainer = styled.div`
   display: flex;
   margin-top: 1rem;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    flex-direction: column;
+  }
 `;
 
 export const ThirdPageSkillBox = styled.div`
@@ -301,16 +317,48 @@ export const ThirdPageSkillBox = styled.div`
   border: 3px solid #c3db64;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1150px) {
+    width: 75vw;
+    border: 3px solid #c3db64;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+`;
+
+export const ThirdPageSkillBox2 = styled.div`
+  width: 40vw;
+  /* height: 65vh; */
+  background: #e3c53d;
+  border: 3px solid #c3db64;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: none;
+  @media screen and (max-width: 1150px) {
+    width: 75vw;
+    border: 3px solid #c3db64;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
 `;
 
 export const ThirdPageSkillItem = styled.div`
-  /* width: 40vw; */
-  /* height: 65vh; */
+  /* width: 100%; */
 
+  /* margin-top: 1rem; */
   display: flex;
   align-items: center;
   /* justify-content: center; */
   /* background: black; */
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    flex-direction: column;
+  }
 `;
 
 export const ThirdPageSkillTextBox = styled.div`
@@ -322,48 +370,60 @@ export const ThirdPageSkillTextBox = styled.div`
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: 1250px) {
+    overflow: hidden;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
   /* background: red; */
 `;
 
 export const ThirdPageSkillSubTextBox = styled.div`
   color: #7579da;
   font-size: 1rem;
+  @media screen and (max-width: 1250px) {
+    overflow: hidden;
+    font-size: 0.5rem;
+  }
 
   /* background: blue; */
 `;
-export const ThirdPageSkillBox2 = styled.div`
-  width: 40vw;
-  /* height: 65vh; */
-  background: #e3c53d;
-  border: 3px solid #c3db64;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  border-left: none;
-`;
 
 export const ThirdPageSkillCircle = styled.div`
-  width: 8rem;
-  height: 8rem;
+  width: 150px;
+  height: 150px;
   border: 4px solid #f1e29e;
   border-radius: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 2rem;
+  @media screen and (max-width: 1150px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const StyledFontAwesomeIcon2 = styled(FontAwesomeIcon)`
   color: #7579da;
-  font-size: 5rem;
+  font-size: 6.5rem;
+  @media screen and (max-width: 1150px) {
+    font-size: 4rem;
+  }
 `;
 
 export const ThirdPageSkillHeadCopy = styled(SecondPageHeadCopy)`
   /* height: 20vh; */
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   /* background-color: blue; */
   font-size: 5rem;
   font-weight: bold;
   color: #7579da;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 2rem;
+  }
 `;
 
 export const ThirdPageSkillSubCopy = styled(SecondPageSubCopy)`
@@ -374,6 +434,10 @@ export const ThirdPageSkillSubCopy = styled(SecondPageSubCopy)`
   /* background-color: red; */
   font-size: 1.7rem;
   color: #7579da;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 1rem;
+  }
 `;
 
 export const FourthPage = styled(FirstPage)`
@@ -389,6 +453,11 @@ export const FourthPageHeadCopy = styled(SecondPageHeadCopy)`
   font-weight: bold;
   color: #c3db64;
   font-family: "Poppins", sans-serif;
+
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 3rem;
+  }
 `;
 export const FourthPageSubCopy = styled(SecondPageSubCopy)`
   margin-bottom: 1rem;
@@ -399,6 +468,10 @@ export const FourthPageSubCopy = styled(SecondPageSubCopy)`
   font-size: 1.7rem;
   color: #c3db64;
   font-family: "Noto Sans KR", sans-serif;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 1rem;
+  }
 `;
 
 export const FourthPageBox = styled.div`
@@ -413,16 +486,33 @@ export const FourthPageBox = styled.div`
   padding: 1rem;
   margin-top: 5rem;
   margin-bottom: 14rem;
+
+  /* background-color: white; */
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const FourthPageItem = styled.div`
   width: 25%;
+  /* background-color: gray; */
 
   border-right: 1px solid #c3db64;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    border-bottom: 1px solid #c3db64;
+    border-right: none;
+  }
 `;
 
 export const FourthPageItem2 = styled.div`
@@ -431,6 +521,12 @@ export const FourthPageItem2 = styled.div`
   flex-direction: column;
   align-items: center;
   /* background-color: blue; */
+  /* background-color: red; */
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+  }
 `;
 
 export const FourthPageItemCopyBox = styled.div`
@@ -445,6 +541,10 @@ export const FourthPageItemCopy = styled(SecondPageHeadCopy)`
   font-weight: bold;
   color: #c3db64;
   font-family: "Noto Sans KR", sans-serif;
+  @media screen and (max-width: 1150px) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
 `;
 
 export const FourthPageItemSubCopy = styled(SecondPageSubCopy)`
@@ -467,6 +567,68 @@ export const FourthPageItemImg = styled.img`
     transform: scale(1.1);
     opacity: 0.7;
   }
+  @media screen and (max-width: 1150px) {
+    width: 20%;
+  }
+
+  /* background-color: blue; */
+`;
+export const FourthPageItemImg2 = styled.img`
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2rem;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  @media screen and (max-width: 1150px) {
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+
+  /* background-color: blue; */
+`;
+export const FourthPageItemImg3 = styled.img`
+  width: 40%;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  @media screen and (max-width: 1150px) {
+    width: 20%;
+  }
+
+  /* background-color: blue; */
+`;
+export const FourthPageItemImg4 = styled.img`
+  width: 33%;
+  margin-top: 1.2rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  @media screen and (max-width: 1150px) {
+    width: 20%;
+    margin-bottom: 2rem;
+  }
+
   /* background-color: blue; */
 `;
 
@@ -488,6 +650,10 @@ export const FifthPageHeadCopy = styled(SecondPageHeadCopy)`
   font-weight: bold;
   color: #7579da;
   font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 2.7rem;
+  }
 `;
 export const FifthPageSubCopy = styled(SecondPageSubCopy)`
   margin-bottom: 1rem;
@@ -496,6 +662,11 @@ export const FifthPageSubCopy = styled(SecondPageSubCopy)`
   font-size: 1.7rem;
   color: #7579da;
   font-family: "Noto Sans KR", sans-serif;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const FifthPageBox = styled.div`
@@ -503,7 +674,7 @@ export const FifthPageBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 8rem;
+  /* margin-right: 8rem; */
 `;
 
 export const FifthPageItemBox = styled.div`
@@ -517,6 +688,10 @@ export const FifthPageItemBox = styled.div`
 
 export const FifthPageItemImg = styled.img`
   width: 14rem;
+  @media screen and (max-width: 1150px) {
+    width: 7rem;
+    margin-right: -1rem;
+  }
 `;
 
 export const FifthPageItemCopy = styled.div`
@@ -528,6 +703,12 @@ export const FifthPageItemCopy = styled.div`
   font-weight: bold;
   flex-direction: column;
   font-family: "Noto Sans KR", sans-serif;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 0.7rem;
+    padding: 1rem;
+    width: 50vw;
+  }
 `;
 export const FifthPageItemSubCopy = styled.div`
   margin-top: 0.5rem;
@@ -537,4 +718,10 @@ export const FifthPageItemSubCopy = styled.div`
   justify-content: flex-end;
 
   font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 0.4rem;
+    margin-top: 0.2rem;
+    margin-right: 1rem;
+  }
 `;

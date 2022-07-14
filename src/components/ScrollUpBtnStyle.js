@@ -12,8 +12,8 @@ export const fadeInAnimation = keyframes`
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 3%;
+  right: 3%;
   color: white;
   font-size: 300%;
   opacity: 0.7;
@@ -23,4 +23,9 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     opacity: 1;
   }
   animation: ${fadeInAnimation} 0.5s ease-in-out;
+
+  @media screen and (max-width: 1150px) {
+    overflow: hidden;
+    font-size: 2rem;
+  }
 `;

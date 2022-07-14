@@ -2,21 +2,26 @@ import React, { useState } from "react";
 import Logo from "../../img/logo.png";
 
 import {
-  MainContainer,
-  LogoContainer,
+  // MainContainer,
+  // LogoContainer,
   LogoImgContainer,
   LogoCopyContainer,
-  NavContainer,
-  HamburgerMenu,
-  NavItem,
+  // NavContainer,
+  // HamburgerMenu,
+  // NavItem,
+  Nav,
+  LogoBox,
+  Menu,
+  Hamburger,
+  MenuLink,
 } from "./HeaderStyle";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <MainContainer>
-        <LogoContainer>
+      <Nav>
+        <LogoBox>
           <LogoImgContainer src={Logo} />
           <LogoCopyContainer
             onClick={() => {
@@ -25,58 +30,63 @@ const Header = () => {
           >
             Wonil's Portfolio
           </LogoCopyContainer>
-        </LogoContainer>
-
-        <NavContainer isOpen={isOpen}>
-          <NavItem
+        </LogoBox>
+        <Hamburger onClick={() => setIsOpen(!isOpen)}>
+          <span />
+          <span />
+          <span />
+        </Hamburger>
+        <Menu isOpen={isOpen}>
+          <MenuLink
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
+              setIsOpen(!isOpen);
             }}
           >
             Home
-          </NavItem>
-          <NavItem
+          </MenuLink>
+          <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 900, behavior: "smooth" });
+              window.scrollTo({ top: 910, behavior: "smooth" });
+              setIsOpen(!isOpen);
             }}
           >
             About
-          </NavItem>
-          <NavItem
+          </MenuLink>
+          <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 1920, behavior: "smooth" });
+              window.scrollTo({ top: 1940, behavior: "smooth" });
+              setIsOpen(!isOpen);
             }}
           >
             Skills
-          </NavItem>
-          <NavItem
+          </MenuLink>
+          <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 2890, behavior: "smooth" });
+              window.scrollTo({ top: 2900, behavior: "smooth" });
+              setIsOpen(!isOpen);
             }}
           >
             Projects
-          </NavItem>
-          <NavItem
+          </MenuLink>
+          <MenuLink
             onClick={() => {
               window.scrollTo({ top: 3930, behavior: "smooth" });
+              setIsOpen(!isOpen);
             }}
           >
             Testimonial
-          </NavItem>
-          <NavItem
+          </MenuLink>
+          <MenuLink
             onClick={() => {
               window.scrollTo({ top: 5500, behavior: "smooth" });
+              setIsOpen(!isOpen);
             }}
           >
             Contact
-          </NavItem>
-        </NavContainer>
-        <HamburgerMenu onClick={() => setIsOpen(!isOpen)} isOpen={isOpen}>
-          <span />
-          <span />
-          <span />
-        </HamburgerMenu>
-      </MainContainer>
+          </MenuLink>
+        </Menu>
+      </Nav>
     </>
   );
 };

@@ -47,6 +47,9 @@ import {
   FourthPageItemCopy,
   FourthPageItemSubCopy,
   FourthPageItemImg,
+  FourthPageItemImg2,
+  FourthPageItemImg3,
+  FourthPageItemImg4,
   FourthPageItemImgCopy,
   FifthPage,
   FifthPageHeadCopy,
@@ -171,9 +174,9 @@ const Home = () => {
               <ThirdPageSkillCircle>
                 <StyledFontAwesomeIcon2 icon={faReact} />
               </ThirdPageSkillCircle>
-              <ThirdPageSkillTextBox style={{ marginLeft: "3rem" }}>
-                React
-                <ThirdPageSkillSubTextBox>( recoil )</ThirdPageSkillSubTextBox>
+              <ThirdPageSkillTextBox>
+                &nbsp; &nbsp; React &nbsp; &nbsp;
+                <ThirdPageSkillSubTextBox> ( recoil )</ThirdPageSkillSubTextBox>
               </ThirdPageSkillTextBox>
             </ThirdPageSkillItem>
           </ThirdPageSkillBox>
@@ -216,9 +219,8 @@ const Home = () => {
               </FourthPageItemCopy>
               <FourthPageItemSubCopy>2022.05</FourthPageItemSubCopy>
             </FourthPageItemCopyBox>
-            <FourthPageItemImg
+            <FourthPageItemImg2
               src={youTube}
-              style={{ width: "40%", marginTop: "2rem" }}
               onClick={() => {
                 window.open("https://github.com/MongLong0214/YouTubeClone");
               }}
@@ -232,9 +234,8 @@ const Home = () => {
               </FourthPageItemCopy>
               <FourthPageItemSubCopy>2022.04</FourthPageItemSubCopy>
             </FourthPageItemCopyBox>
-            <FourthPageItemImg
+            <FourthPageItemImg3
               src={CatchCalorie}
-              style={{ width: "40%", marginTop: "1rem", marginBottom: "1rem" }}
               onClick={() => {
                 window.open("https://github.com/MujiDev/catch-calorie");
               }}
@@ -249,12 +250,8 @@ const Home = () => {
               </FourthPageItemCopy>
               <FourthPageItemSubCopy>2022.03</FourthPageItemSubCopy>
             </FourthPageItemCopyBox>
-            <FourthPageItemImg
+            <FourthPageItemImg4
               src={git}
-              style={{
-                width: "33%",
-                marginTop: "1.5rem",
-              }}
               onClick={() => {
                 window.open("https://github.com/MongLong0214/BoardCRUD");
               }}
@@ -274,7 +271,7 @@ const Home = () => {
               같이 일하면 즐거운 사람입니다. 항상 적극적이며, 개선점을 찾아
               수정하는 것을 즐깁니다.
               <FifthPageItemSubCopy>
-                Jisu / elice ai 트랙 4기
+                Jisu / elice ai Track 4th
               </FifthPageItemSubCopy>
             </FifthPageItemCopy>
           </FifthPageItemBox>
@@ -285,7 +282,7 @@ const Home = () => {
               줄 아는사람 입니다.
               <FifthPageItemSubCopy>
                 {" "}
-                Danial Kim / elice ai 트랙 4기
+                Danial Kim / elice ai Track 4th
               </FifthPageItemSubCopy>
             </FifthPageItemCopy>
           </FifthPageItemBox>
@@ -296,7 +293,7 @@ const Home = () => {
               놓치지 않는 사람입니다.
               <FifthPageItemSubCopy>
                 {" "}
-                Anna Jung/ elice ai 트랙 4기
+                Anna Jung/ elice ai Track 4th
               </FifthPageItemSubCopy>
             </FifthPageItemCopy>
           </FifthPageItemBox>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import ScrollUpBtn from "../ScrollUpBtn";
@@ -65,10 +65,8 @@ import SeoulMate from "../../img/SeoulMate.png";
 import youTube from "../../img/youTube.png";
 import CatchCalorie from "../../img/CatchCalorie.png";
 import git from "../../img/git.png";
-
 import imoge1 from "../../img/imoge2.png";
 import imoge2 from "../../img/imoge1.png";
-import imoge3 from "../../img/imoge3.png";
 import imoge4 from "../../img/imoge4.png";
 
 const Home = () => {

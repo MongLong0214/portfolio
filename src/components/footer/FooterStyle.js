@@ -22,7 +22,7 @@ export const FooterContactText = styled.div`
   font-weight: bold;
   color: white;
   @media screen and (max-width: 1150px) {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 `;
 
@@ -72,7 +72,7 @@ export const FooterSubCopy = styled.div`
   color: white;
   margin-bottom: 1rem;
   @media screen and (max-width: 1150px) {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     margin-top: 1rem;
   }
 `;

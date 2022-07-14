@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import Logo from "../../img/logo.png";
 
 import {
-  // MainContainer,
-  // LogoContainer,
   LogoImgContainer,
   LogoCopyContainer,
-  // NavContainer,
-  // HamburgerMenu,
-  // NavItem,
   Nav,
   LogoBox,
   Menu,
@@ -16,8 +11,14 @@ import {
   MenuLink,
 } from "./HeaderStyle";
 
-const Header = () => {
+const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const about = props.about;
+  const skills = props.skills;
+  const projects = props.projects;
+  const testimonial = props.testimonial;
+
   return (
     <>
       <Nav>
@@ -47,7 +48,8 @@ const Header = () => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 910, behavior: "smooth" });
+              // window.scrollTo({ top: 930, behavior: "smooth" });
+              about.scrollIntoView({ behavior: "smooth" });
               setIsOpen(!isOpen);
             }}
           >
@@ -55,7 +57,9 @@ const Header = () => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 1940, behavior: "smooth" });
+              skills.scrollIntoView({
+                behavior: "smooth",
+              });
               setIsOpen(!isOpen);
             }}
           >
@@ -63,7 +67,7 @@ const Header = () => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 2900, behavior: "smooth" });
+              projects.scrollIntoView({ behavior: "smooth" });
               setIsOpen(!isOpen);
             }}
           >
@@ -71,7 +75,7 @@ const Header = () => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              window.scrollTo({ top: 3930, behavior: "smooth" });
+              testimonial.scrollIntoView({ behavior: "smooth" });
               setIsOpen(!isOpen);
             }}
           >

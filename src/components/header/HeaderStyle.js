@@ -7,8 +7,9 @@ export const LogoImgContainer = styled.img`
   margin-right: 1rem;
   /* padding: 1rem; */
   @media screen and (max-width: 1150px) {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: -2rem;
   }
 `;
 
@@ -27,6 +28,7 @@ export const LogoCopyContainer = styled.div`
 
   @media screen and (max-width: 1150px) {
     font-size: 1rem;
+    margin-left: -0.4rem;
   }
 `;
 
@@ -50,7 +52,7 @@ export const Nav = styled.div`
 `;
 
 export const LogoBox = styled.a`
-  padding: 1rem 0;
+  padding: 0.5rem;
   color: #7b7fda;
   text-decoration: none;
   font-weight: 800;
@@ -77,12 +79,13 @@ export const Menu = styled.div`
     flex-direction: column;
     max-height: ${({ isOpen }) => (isOpen ? "270px" : "0")};
     width: 100vw;
-    margin-top: -1rem;
+    margin-bottom: 1rem;
+    /* margin-top: -1rem; */
   }
 `;
 
 export const MenuLink = styled.a`
-  padding: 1rem 2rem;
+  padding: 0.5rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -101,7 +104,7 @@ export const Hamburger = styled.div`
   flex-direction: column;
   cursor: pointer;
 
-  margin-right: 5rem;
+  margin-right: 4rem;
 
   span {
     height: 2px;
@@ -113,5 +116,12 @@ export const Hamburger = styled.div`
 
   @media (max-width: 1150px) {
     display: flex;
+    span {
+      height: 2px;
+      width: 20px;
+      background: white;
+      margin-bottom: 4px;
+      border-radius: 5px;
+    }
   }
 `;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import ScrollUpBtn from "../ScrollUpBtn";
@@ -70,10 +70,36 @@ import imoge2 from "../../img/imoge1.png";
 import imoge4 from "../../img/imoge4.png";
 
 const Home = () => {
+  const [about, setAbout] = useState("");
+  const [skills, setSkills] = useState("");
+  const [projects, setProjects] = useState("");
+  const [testimonial, setTestimonial] = useState("");
+
+  useEffect(() => {
+    const about = document.querySelector("#About");
+    const skills = document.querySelector("#Skills");
+    const projects = document.querySelector("#Projects");
+    const testimonial = document.querySelector("#Testimonial");
+    setAbout(about);
+    setSkills(skills);
+    setProjects(projects);
+    setTestimonial(testimonial);
+  }, []);
+
+  // const scrollIntoView = (selector) => {
+  //   const scrollMove = document.querySelector(selector);
+  //   scrollMove.scrollIntoView({ behavior: "smooth" });
+  // };
+
   return (
     <>
-      <Header />
-      <FirstPage>
+      <Header
+        about={about}
+        skills={skills}
+        projects={projects}
+        testimonial={testimonial}
+      />
+      <FirstPage id="Home">
         <FirstPageProfileImg src={ProfileImg} />
         <FirstPageProfileCopy>
           Hello,
@@ -88,7 +114,7 @@ const Home = () => {
           Contact Me
         </ContactButton>
       </FirstPage>
-      <SecondPage>
+      <SecondPage id="About">
         <SecondPageHeadCopy>About Me</SecondPageHeadCopy>
         <SecondPageSubCopy>돌덩이를 관통하는 물방울처럼</SecondPageSubCopy>
         <SecondPageSubCopy2>
@@ -141,7 +167,7 @@ const Home = () => {
           </SecondPageCareerText>
         </SecondPageCareer>
       </SecondPage>
-      <ThirdPage>
+      <ThirdPage id="Skills">
         <ThirdPageHeadCopy>Skills</ThirdPageHeadCopy>
         <ThirdPageSubCopy>Skills & Attributes </ThirdPageSubCopy>
         <ThirdPageSkillBoxContainer>
@@ -190,7 +216,7 @@ const Home = () => {
           </ThirdPageSkillBox2>
         </ThirdPageSkillBoxContainer>
       </ThirdPage>
-      <FourthPage>
+      <FourthPage id="Projects">
         <FourthPageHeadCopy>Projects</FourthPageHeadCopy>
         <FourthPageSubCopy>지금까지 작업한 결과물 입니다</FourthPageSubCopy>
         <FourthPageBox>
@@ -257,7 +283,7 @@ const Home = () => {
           </FourthPageItem2>
         </FourthPageBox>
       </FourthPage>
-      <FifthPage>
+      <FifthPage id="Testimonial">
         <FifthPageHeadCopy>Testimonials</FifthPageHeadCopy>
         <FifthPageSubCopy>
           저를 본 사람들은 저를 이렇게 평가합니다

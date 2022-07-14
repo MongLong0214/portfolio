@@ -15,9 +15,9 @@ export const FirstPage = styled.section`
 `;
 
 export const FirstPageProfileImg = styled.img`
-  width: 21rem;
-  height: 21rem;
-  border-radius: 50%;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 100%;
   background-color: #e3c53d;
   margin-top: 12.5rem;
 
@@ -150,7 +150,8 @@ export const SecondPageSubCopy3 = styled.div`
 
   @media screen and (max-width: 1150px) {
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
   }
 `;
 
@@ -199,7 +200,7 @@ export const SecondPageCopyBox = styled.div`
   align-items: center;
   @media screen and (max-width: 1150px) {
     overflow: hidden;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   /* font-family: "Poppins", sans-serif; */
@@ -234,8 +235,8 @@ export const SecondPageCircle = styled.div`
     }
   }
   @media screen and (max-width: 1150px) {
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
   }
 `;
 
@@ -651,7 +652,8 @@ export const FifthPageHeadCopy = styled(SecondPageHeadCopy)`
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 1150px) {
     overflow: hidden;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
+    margin-bottom: -1rem;
   }
 `;
 export const FifthPageSubCopy = styled(SecondPageSubCopy)`
@@ -663,8 +665,8 @@ export const FifthPageSubCopy = styled(SecondPageSubCopy)`
   font-family: "Noto Sans KR", sans-serif;
   @media screen and (max-width: 1150px) {
     overflow: hidden;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
   }
 `;
 

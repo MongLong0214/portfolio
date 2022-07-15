@@ -22,7 +22,7 @@ export const FirstPageProfileImg = styled.img`
   margin-top: 12.5rem;
 
   @media screen and (max-width: 1150px) {
-    margin-top: 6rem;
+    margin-top: 5.4rem;
     width: 13rem;
     height: 13rem;
     margin-bottom: 0.5rem;

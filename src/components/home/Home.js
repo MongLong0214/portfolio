@@ -76,20 +76,16 @@ const Home = () => {
   const [testimonial, setTestimonial] = useState("");
 
   useEffect(() => {
-    const about = document.querySelector("#About");
-    const skills = document.querySelector("#Skills");
-    const projects = document.querySelector("#Projects");
-    const testimonial = document.querySelector("#Testimonial");
+    const about = document.querySelector("#About").offsetTop;
+    const skills = document.querySelector("#Skills").offsetTop;
+    const projects = document.querySelector("#Projects").offsetTop;
+    const testimonial = document.querySelector("#Testimonial").offsetTop;
+
     setAbout(about);
     setSkills(skills);
     setProjects(projects);
     setTestimonial(testimonial);
   }, []);
-
-  // const scrollIntoView = (selector) => {
-  //   const scrollMove = document.querySelector(selector);
-  //   scrollMove.scrollIntoView({ behavior: "smooth" });
-  // };
 
   return (
     <>

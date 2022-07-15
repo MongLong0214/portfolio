@@ -77,9 +77,9 @@ export const Menu = styled.div`
   @media (max-width: 1150px) {
     overflow: hidden;
     flex-direction: column;
-    max-height: ${({ isOpen }) => (isOpen ? "270px" : "0")};
+    max-height: ${({ isOpen }) => (isOpen ? "17rem" : "0")};
     width: 100vw;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     /* margin-top: -1rem; */
   }
 `;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../../img/logo.png";
 
 import {
@@ -13,15 +13,22 @@ import {
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navHeight, setNavHeight] = useState("");
 
   const about = props.about;
   const skills = props.skills;
   const projects = props.projects;
   const testimonial = props.testimonial;
 
+  useEffect(() => {
+    const navHeight = document.querySelector("#nav").offsetHeight;
+    setNavHeight(navHeight);
+  }, []);
+  console.log("Nav Height: ", about - navHeight);
+
   return (
     <>
-      <Nav>
+      <Nav id="nav">
         <LogoBox>
           <LogoImgContainer src={Logo} />
           <LogoCopyContainer
@@ -48,8 +55,7 @@ const Header = (props) => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              // window.scrollTo({ top: 930, behavior: "smooth" });
-              about.scrollIntoView({ behavior: "smooth" });
+              window.scrollTo({ top: about - navHeight, behavior: "smooth" });
               setIsOpen(!isOpen);
             }}
           >
@@ -57,9 +63,7 @@ const Header = (props) => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              skills.scrollIntoView({
-                behavior: "smooth",
-              });
+              window.scrollTo({ top: skills - navHeight, behavior: "smooth" });
               setIsOpen(!isOpen);
             }}
           >
@@ -67,7 +71,10 @@ const Header = (props) => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              projects.scrollIntoView({ behavior: "smooth" });
+              window.scrollTo({
+                top: projects - navHeight,
+                behavior: "smooth",
+              });
               setIsOpen(!isOpen);
             }}
           >
@@ -75,7 +82,10 @@ const Header = (props) => {
           </MenuLink>
           <MenuLink
             onClick={() => {
-              testimonial.scrollIntoView({ behavior: "smooth" });
+              window.scrollTo({
+                top: testimonial + 80,
+                behavior: "smooth",
+              });
               setIsOpen(!isOpen);
             }}
           >

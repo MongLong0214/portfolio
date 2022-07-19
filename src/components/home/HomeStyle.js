@@ -20,6 +20,11 @@ export const FirstPageProfileImg = styled.img`
   border-radius: 100%;
   background-color: #e3c53d;
   margin-top: 12.5rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    scale: 1.1;
+  }
 
   @media screen and (max-width: 1150px) {
     margin-top: 5.4rem;
@@ -619,6 +624,7 @@ export const FourthPageItemImg4 = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.2rem;
   cursor: pointer;
   &:hover {
     transform: scale(1.1);
@@ -635,9 +641,14 @@ export const FourthPageItemImg4 = styled.img`
 export const FourthPageItemImgCopy = styled(SecondPageSubCopy)`
   font-weight: bold;
   /* background-color: red; */
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   color: #e3c53d;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
 `;
 
 export const FifthPage = styled(FirstPage)`

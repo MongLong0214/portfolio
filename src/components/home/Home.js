@@ -96,7 +96,14 @@ const Home = () => {
         testimonial={testimonial}
       />
       <FirstPage id="Home">
-        <FirstPageProfileImg src={ProfileImg} />
+        <FirstPageProfileImg
+          src={ProfileImg}
+          onClick={() => {
+            window.open(
+              "https://www.notion.so/3ddb159f9ffa4530aeecf3cb0af1a23b"
+            );
+          }}
+        />
         <FirstPageProfileCopy>
           Hello,
           <br /> I'm an active Front-end Developer
@@ -230,7 +237,13 @@ const Home = () => {
                 window.open("https://github.com/MongLong0214/SeoulMate");
               }}
             />
-            <FourthPageItemImgCopy>SeoulMate</FourthPageItemImgCopy>
+            <FourthPageItemImgCopy
+              onClick={() => {
+                window.open("https://youtu.be/83OacAZYUTE");
+              }}
+            >
+              SeoulMate 시연영상
+            </FourthPageItemImgCopy>
           </FourthPageItem>
           <FourthPageItem>
             <FourthPageItemCopyBox>
@@ -260,7 +273,13 @@ const Home = () => {
                 window.open("https://github.com/MujiDev/catch-calorie");
               }}
             />
-            <FourthPageItemImgCopy>CatchCalorie</FourthPageItemImgCopy>
+            <FourthPageItemImgCopy
+              onClick={() => {
+                window.open("https://youtu.be/5eMSi_ZKytI");
+              }}
+            >
+              CatchCalorie 시연영상
+            </FourthPageItemImgCopy>
           </FourthPageItem>
           <FourthPageItem2>
             <FourthPageItemCopyBox>
@@ -276,6 +295,13 @@ const Home = () => {
                 window.open("https://github.com/MongLong0214/BoardCRUD");
               }}
             />
+            <FourthPageItemImgCopy
+              onClick={() => {
+                window.open("https://youtu.be/JoBmSg5emLo");
+              }}
+            >
+              게시판 CRUD 시연영상
+            </FourthPageItemImgCopy>
           </FourthPageItem2>
         </FourthPageBox>
       </FourthPage>

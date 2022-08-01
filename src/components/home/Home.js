@@ -141,8 +141,9 @@ const Home = () => {
               <StyledFontAwesomeIcon icon={faJsSquare} />
             </SecondPageCircle>
             <SecondPageCopyBox>
-              React를 더 잘 다루기 위해
-              <br /> Vanila Js를 중요하게 생각하고 있습니다.
+              Vanila Js를 중요하게 생각하고 있으며,
+              <br />
+              TypeScript를 사용 할 수 있습니다.
             </SecondPageCopyBox>
           </SecondPageEachCircleBox>
           <SecondPageEachCircleBox>
@@ -150,8 +151,7 @@ const Home = () => {
               <StyledFontAwesomeIcon icon={faReact} />
             </SecondPageCircle>
             <SecondPageCopyBox>
-              React를 이용한
-              <br /> 협업 프로젝트 경험이 4회 있습니다.
+              SSR을 위해 Nest.js를 사용 할 수 있습니다.
             </SecondPageCopyBox>
           </SecondPageEachCircleBox>
         </SecondPageCircleBox>
@@ -203,7 +203,10 @@ const Home = () => {
               </ThirdPageSkillCircle>
               <ThirdPageSkillTextBox>
                 &nbsp; &nbsp; React &nbsp; &nbsp;
-                <ThirdPageSkillSubTextBox> ( recoil )</ThirdPageSkillSubTextBox>
+                <ThirdPageSkillSubTextBox>
+                  {" "}
+                  ( Next.js )
+                </ThirdPageSkillSubTextBox>
               </ThirdPageSkillTextBox>
             </ThirdPageSkillItem>
           </ThirdPageSkillBox>

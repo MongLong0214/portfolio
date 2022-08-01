@@ -151,7 +151,7 @@ const Home = () => {
               <StyledFontAwesomeIcon icon={faReact} />
             </SecondPageCircle>
             <SecondPageCopyBox>
-              SSR을 위해 Nest.js를 사용 할 수 있습니다.
+              SSR을 위해 Next.js를 사용 할 수 있습니다.
             </SecondPageCopyBox>
           </SecondPageEachCircleBox>
         </SecondPageCircleBox>

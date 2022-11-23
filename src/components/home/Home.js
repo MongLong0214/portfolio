@@ -157,16 +157,11 @@ const Home = () => {
         </SecondPageCircleBox>
         <SecondPageCareer>
           <SecondPageCareerText>
-            주식회사 풀스택{" "}
+            주식회사 풀스택 (비대면 본인인증 서비스) - 프론트엔드 개발자
             <span style={{ fontSize: "0.5rem" }}>(2022.09~현재) </span>
           </SecondPageCareerText>
           <SecondPageCareerText>
-            Social MC (광고 대행사) - 영상 광고 기획 및 PM{" "}
-            <span style={{ fontSize: "0.5rem" }}>(2018.06~2019.10) </span>
-          </SecondPageCareerText>
-          <SecondPageCareerText>
-            준콤 (광고대행사) - 광고 영업 및 AE{" "}
-            <span style={{ fontSize: "0.5rem" }}>(2017.01~2018.03) </span>
+            React 및 Vue를 사용한 프론트엔드 개발을 담당하고 있습니다.
           </SecondPageCareerText>
         </SecondPageCareer>
       </SecondPage>
@@ -212,9 +207,9 @@ const Home = () => {
           </ThirdPageSkillBox>
           <ThirdPageSkillBox2>
             <ThirdPageSkillHeadCopy>Tools</ThirdPageSkillHeadCopy>
+            <ThirdPageSkillSubCopy>Webstorm</ThirdPageSkillSubCopy>
             <ThirdPageSkillSubCopy>Visual Studio Code</ThirdPageSkillSubCopy>
             <ThirdPageSkillSubCopy>Figma</ThirdPageSkillSubCopy>
-            <ThirdPageSkillSubCopy>Webstorm</ThirdPageSkillSubCopy>
             <ThirdPageSkillHeadCopy>Etc.</ThirdPageSkillHeadCopy>
             <ThirdPageSkillSubCopy>Vue.js</ThirdPageSkillSubCopy>
             <ThirdPageSkillSubCopy>Node.js</ThirdPageSkillSubCopy>

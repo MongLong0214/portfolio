@@ -157,8 +157,8 @@ const Home = () => {
         </SecondPageCircleBox>
         <SecondPageCareer>
           <SecondPageCareerText>
-            비디오샵 (광고제작프로덕션) - 광고 제작 PD{" "}
-            <span style={{ fontSize: "0.5rem" }}>(2020.01~2021.08) </span>
+            주식회사 풀스택{" "}
+            <span style={{ fontSize: "0.5rem" }}>(2022.09~현재) </span>
           </SecondPageCareerText>
           <SecondPageCareerText>
             Social MC (광고 대행사) - 영상 광고 기획 및 PM{" "}
@@ -182,7 +182,7 @@ const Home = () => {
               <ThirdPageSkillTextBox>
                 Html / Css
                 <ThirdPageSkillSubTextBox>
-                  ( styled-component )
+                  (tailwind, bootstrap, mui)
                 </ThirdPageSkillSubTextBox>
               </ThirdPageSkillTextBox>
             </ThirdPageSkillItem>
@@ -214,9 +214,9 @@ const Home = () => {
             <ThirdPageSkillHeadCopy>Tools</ThirdPageSkillHeadCopy>
             <ThirdPageSkillSubCopy>Visual Studio Code</ThirdPageSkillSubCopy>
             <ThirdPageSkillSubCopy>Figma</ThirdPageSkillSubCopy>
-            <ThirdPageSkillSubCopy>Adobe XD</ThirdPageSkillSubCopy>
+            <ThirdPageSkillSubCopy>Webstorm</ThirdPageSkillSubCopy>
             <ThirdPageSkillHeadCopy>Etc.</ThirdPageSkillHeadCopy>
-            <ThirdPageSkillSubCopy>Git</ThirdPageSkillSubCopy>
+            <ThirdPageSkillSubCopy>Vue.js</ThirdPageSkillSubCopy>
             <ThirdPageSkillSubCopy>Node.js</ThirdPageSkillSubCopy>
             <ThirdPageSkillSubCopy>Python</ThirdPageSkillSubCopy>
           </ThirdPageSkillBox2>

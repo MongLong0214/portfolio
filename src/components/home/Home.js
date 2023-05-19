@@ -64,6 +64,7 @@ import ProfileImg from "../../img/ProfileImg.jpg";
 import SeoulMate from "../../img/SeoulMate.png";
 import youTube from "../../img/youTube.png";
 import CatchCalorie from "../../img/CatchCalorie.png";
+import SDLogo from "../../img/SD.png";
 import git from "../../img/git.png";
 import imoge1 from "../../img/imoge2.png";
 import imoge2 from "../../img/imoge1.png";
@@ -132,8 +133,8 @@ const Home = () => {
               <StyledFontAwesomeIcon icon={faHtml5} />
             </SecondPageCircle>
             <SecondPageCopyBox>
-              HTML/CSS를 Front-end 개발에 <br />
-              적합하게 작성합니다.
+              tailwind, mui, antd, bootstrap, styledcomponent 등 <br />
+              다양한 스타일링 라이브러리를 사용 할 수 있습니다.
             </SecondPageCopyBox>
           </SecondPageEachCircleBox>
           <SecondPageEachCircleBox>
@@ -151,14 +152,14 @@ const Home = () => {
               <StyledFontAwesomeIcon icon={faReact} />
             </SecondPageCircle>
             <SecondPageCopyBox>
-              SSR을 위해 Next.js를 사용 할 수 있습니다.
+              SSR 및 SEO 최적화를 위해 Next.js를 사용 할 수 있습니다.
             </SecondPageCopyBox>
           </SecondPageEachCircleBox>
         </SecondPageCircleBox>
         <SecondPageCareer>
           <SecondPageCareerText>
             주식회사 풀스택 (비대면 본인인증 서비스) - 프론트엔드 개발자
-            <span style={{ fontSize: "0.5rem" }}>(2022.09~현재) </span>
+            <span style={{ fontSize: "0.5rem" }}>(2022.09~2023.05) </span>
           </SecondPageCareerText>
           <SecondPageCareerText>
             React 및 Vue를 사용한 프론트엔드 개발을 담당하고 있습니다.
@@ -224,6 +225,29 @@ const Home = () => {
           <FourthPageItem>
             <FourthPageItemCopyBox>
               <FourthPageItemCopy>
+                생성형 AI를 활용한
+                <br />
+                의상 변경 서비스
+              </FourthPageItemCopy>
+              <FourthPageItemSubCopy>2022.06</FourthPageItemSubCopy>
+            </FourthPageItemCopyBox>
+            <FourthPageItemImg
+              src={SDLogo}
+              onClick={() => {
+                window.open("https://github.com/MongLong0214/team-diver");
+              }}
+            />
+            <FourthPageItemImgCopy
+              onClick={() => {
+                window.open("https://stablediffusion-test.vercel.app/main");
+              }}
+            >
+              앱 실행
+            </FourthPageItemImgCopy>
+          </FourthPageItem>
+          <FourthPageItem>
+            <FourthPageItemCopyBox>
+              <FourthPageItemCopy>
                 랜드마크 정보 <br />
                 예측 서비스
               </FourthPageItemCopy>
@@ -250,14 +274,14 @@ const Home = () => {
               </FourthPageItemCopy>
               <FourthPageItemSubCopy>2022.05</FourthPageItemSubCopy>
             </FourthPageItemCopyBox>
-            <FourthPageItemImg2
+            <FourthPageItemImg3
               src={youTube}
               onClick={() => {
                 window.open("https://github.com/MongLong0214/YouTubeClone");
               }}
             />
           </FourthPageItem>
-          <FourthPageItem>
+          <FourthPageItem2>
             <FourthPageItemCopyBox>
               <FourthPageItemCopy>
                 칼로리 및 운동량 <br />
@@ -265,7 +289,7 @@ const Home = () => {
               </FourthPageItemCopy>
               <FourthPageItemSubCopy>2022.04</FourthPageItemSubCopy>
             </FourthPageItemCopyBox>
-            <FourthPageItemImg3
+            <FourthPageItemImg4
               src={CatchCalorie}
               onClick={() => {
                 window.open("https://github.com/MujiDev/catch-calorie");
@@ -277,28 +301,6 @@ const Home = () => {
               }}
             >
               CatchCalorie 시연영상
-            </FourthPageItemImgCopy>
-          </FourthPageItem>
-          <FourthPageItem2>
-            <FourthPageItemCopyBox>
-              <FourthPageItemCopy>
-                포트폴리오 <br />
-                게시판 CRUD
-              </FourthPageItemCopy>
-              <FourthPageItemSubCopy>2022.03</FourthPageItemSubCopy>
-            </FourthPageItemCopyBox>
-            <FourthPageItemImg4
-              src={git}
-              onClick={() => {
-                window.open("https://github.com/MongLong0214/BoardCRUD");
-              }}
-            />
-            <FourthPageItemImgCopy
-              onClick={() => {
-                window.open("https://youtu.be/JoBmSg5emLo");
-              }}
-            >
-              게시판 CRUD 시연영상
             </FourthPageItemImgCopy>
           </FourthPageItem2>
         </FourthPageBox>
